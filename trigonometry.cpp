@@ -1,3 +1,5 @@
+//Calculate Area of Trigonometry Shapes
+
 #include <iostream>
 #include <stdlib.h>
 #define Pi 3.14
@@ -13,7 +15,7 @@ double areaTrap(double,double,double);
 
 int main(){
     int option;
-    char choice;
+    char choice[1];
     
     do{
         
@@ -21,10 +23,10 @@ int main(){
         cin >> option;
         MenuDecision(option);
     
-        cout << "Do you want to rerun? " << endl;
-        cin >> choice;
+        cout << "Do you want to rerun (Y/N)? " << endl;
+        cin >> choice[0];
        
-        }while(choice == 'y' || choice == 'Y' );
+        }while(choice[0] == 'y' || choice[0] == 'Y' );
     
     return 0;
 }
